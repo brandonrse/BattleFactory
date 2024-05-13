@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(json => dataJSON = json)
 
   ]).then(() => {
-    console.log(dataJSON);
+    // console.log(dataJSON);
 
     dataLength = dataJSON.length;
 
@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Pokemon Data
       let selectedPokemon = dataJSON[i];
-      console.log(selectedPokemon);
       let selectedPokemonData = pokemonJSON[selectedPokemon.name];
       let selectedPokemonPrimaryType = selectedPokemonData.types[0].toLowerCase();
       let selectedPokemonText = '';
@@ -165,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ivText = '<br>IVs: ' + ivText.slice(0, -3);
       }
 
-      selectedPokemonText += '<br>Ability: ' + selectedPokemon.ability + '<br>' + getNature(selectedPokemon.nature) + ' Nature<br>' + evText + ivText;
+      selectedPokemonText += '<br>Ability: ' + selectedPokemon.ability + '<br>' + getNature(selectedPokemon.nature) + '<br>' + evText + ivText;
 
       dataText.innerHTML = selectedPokemonText;
       rowData.appendChild(dataText);
@@ -220,7 +219,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
       col.appendChild(pokemondiv);
       if (i % 4 == 0 && i !== 0) {
-        console.log("hi");
         row = document.createElement('div');
         row.className = 'row mb-2';
         row.appendChild(col);
