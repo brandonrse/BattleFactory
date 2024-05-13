@@ -11,6 +11,14 @@ var fontMedium = new FontFace("Cabin Condensed-Medium", "url(fonts/CabinCondense
 var fontRegular = new FontFace("Cabin Condensed-Regular", "url(fonts/CabinCondensed-Regular.ttf)");
 var fontSemiBold = new FontFace("Cabin Condensed-SemiBold", "url(fonts/CabinCondensed-SemiBold.ttf)");
 
+let searchInput = document.getElementById('pokemon-search');
+searchInput.addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    document.querySelector('.search-btn').click();
+  }
+})
+
 document.addEventListener("DOMContentLoaded", function() {  
   
  
@@ -44,18 +52,19 @@ document.addEventListener("DOMContentLoaded", function() {
     let container = document.getElementsByClassName('container')[0];
     // First row
     let row = document.createElement('div');
-    row.className = 'row mb-2';
+    // row.className = 'row mb-2';
+    row.className = 'row row-cols gy-3';
 
     for (let i = 0; i < dataLength; i++) {
-      // Column 1-4
-      let col = document.createElement('div');
-      col.className = 'col-lg-3 col-md-4 col-sm-6 col-xs-6';
-
       // Pokemon Data
       let selectedPokemon = dataJSON[i];
       let selectedPokemonData = pokemonJSON[selectedPokemon.name];
       let selectedPokemonPrimaryType = selectedPokemonData.types[0].toLowerCase();
       let selectedPokemonText = '';
+
+      // Column 1-4
+      let col = document.createElement('div');
+      col.className = 'col-lg-3 col-md-4 col-sm-6 col-xs-6 filterCol ' + selectedPokemon.name;
 
       // Div of the Pokemon
       let pokemondiv = document.createElement('div');
@@ -218,17 +227,21 @@ document.addEventListener("DOMContentLoaded", function() {
       pokemondiv.appendChild(clipboardBtn);
 
       col.appendChild(pokemondiv);
-      if (i % 4 == 0 && i !== 0) {
-        row = document.createElement('div');
-        row.className = 'row mb-2';
-        row.appendChild(col);
-        container.appendChild(row);
-      }
-      else {
-        row.appendChild(col);
-        container.appendChild(row);
-      }
+      row.appendChild(col);
+      
+      // if (i % 4 == 0 && i !== 0) {
+      //   row = document.createElement('div');
+      //   row.className = 'row mb-2';
+      //   row.appendChild(col);
+      //   container.appendChild(row);
+      // }
+      // else {
+      //   row.appendChild(col);
+      //   container.appendChild(row);
+      // }
     }
+    
+    container.appendChild(row);
   })
 
 
@@ -527,4 +540,41 @@ function toTitleCase(str) {
       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     }
   )
+}
+
+function filterPokemon() {
+  let str = document.getElementById('pokemon-search').value.toUpperCase();
+  
+  let pokemon = document.getElementsByClassName('filterCol');
+
+  for (let i = 0; i < pokemon.length; i++) {
+    addClass(pokemon[i], 'd-none');
+
+    if (pokemon[i].className.includes(str)) {
+      removeClass(pokemon[i], 'd-none');
+    }
+  }
+}
+
+function addClass(pokemon, name) {
+  let classArr = pokemon.className.split(' ');
+  let nameArr = name.split(' ');
+
+  for (let i = 0; i < nameArr.length; i++) {
+    if (classArr.indexOf(nameArr[i]) == -1) {
+      pokemon.className += ' ' + nameArr[i];
+    }    
+  }
+}
+
+function removeClass(pokemon, name) {
+  let classArr = pokemon.className.split(' ');
+  let nameArr = name.split(' ');
+
+  for (let i = 0; i < nameArr.length; i++) {
+    while (classArr.indexOf(nameArr[i]) > -1) {
+      classArr.splice(classArr.indexOf(nameArr[i]), 1);
+    } 
+  }
+  pokemon.className = classArr.join(' ');
 }

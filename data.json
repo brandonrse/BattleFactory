@@ -231,7 +231,7 @@
     "gender": "",
     "shiny": "no",
     "teraType": "Ice",
-    "item": "Never-melt Ice",
+    "item": "Never-Melt Ice",
     "ability": "Sword of Ruin",
     "moves": ["RUINATION", "SACRED SWORD", "SUCKER PUNCH", "ICICLE CRASH"],
     "evs": [0, 0, 0, 0, 0, 0],
