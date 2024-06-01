@@ -246,7 +246,7 @@
     "gender": "M",
     "shiny": "no",
     "teraType": "Ground",
-    "item": "Assault Vest",
+    "item": "Mirror Herb",
     "ability": "Mirror Armor",
     "moves": ["PLUCK", "FAKE TEARS", "SPITE", "THIEF"],
     "evs": [0, 0, 0, 0, 0, 0],
@@ -268,5 +268,35 @@
     "ivs": [31, 31, 31, 31, 31, 31],
     "nature": "Jolly",
     "description":"Again, again!"
+  },
+  {
+    "name": "HOUNDOOM",
+    "nickname": "Baskerville",
+    "level": 100,
+    "gender": "M",
+    "shiny": "no",
+    "teraType": "Ghost",
+    "item": "Focus Sash",
+    "ability": "Unnerve",
+    "moves": ["COMEUPPANCE", "DESTINY BOND", "HEAT WAVE", "FOUL PLAY"],
+    "evs": [128, 0, 0, 252, 0, 128],
+    "ivs": [31, 31, 31, 31, 31, 31],
+    "nature": "Hasty",
+    "description":"If I'm going down, I'm bringing you down with me."
+  },
+  {
+    "name": "SHELLOS",
+    "nickname": "",
+    "level": 100,
+    "gender": "F",
+    "shiny": "no",
+    "teraType": "Grass",
+    "item": "Eviolite",
+    "ability": "Storm Drain",
+    "moves": ["STEALTH ROCK", "RECOVER", "MIRROR COAT", "COUNTER"],
+    "evs": [128, 0, 252, 128, 0, 0],
+    "ivs": [31, 31, 31, 31, 31, 31],
+    "nature": "Bold",
+    "description":"By popular demand, here's a little guy!"
   }
 ]
