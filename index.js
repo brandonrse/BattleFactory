@@ -506,7 +506,7 @@ function getNature(nature) {
 }
 
 function copyToClipboard(pokemon) {
-  let copyText = pokemon.name + ' (' + pokemon.gender + ') @ ' + pokemon.item + '\nAbility: ' + pokemon.ability + '\nLevel: ' + pokemon.level + '\nShiny: ' + pokemon.shiny + '\nTera Type: ' + pokemon.teraType + '\nEVs: ' + pokemon.evs[0] + ' HP / ' + pokemon.evs[1] + ' Atk / ' + pokemon.evs[2] + ' Def / ' + pokemon.evs[3] + ' SpA / ' + pokemon.evs[4] + ' SpD / ' + pokemon.evs[5] + ' Spe\nIVs: ' + pokemon.ivs[0] + ' HP / ' + pokemon.ivs[1] + ' Atk / ' + pokemon.ivs[2] + ' Def / ' + pokemon.ivs[3] + ' SpA / ' + pokemon.ivs[4] + ' SpD / ' + pokemon.ivs[5] + ' Spe\n';
+  let copyText = pokemon.name + ' (' + pokemon.gender + ') @ ' + pokemon.item + '\nAbility: ' + pokemon.ability + '\nLevel: ' + pokemon.level + '\nShiny: ' + pokemon.shiny + '\nTera Type: ' + pokemon.teraType + '\nEVs: ' + pokemon.evs[0] + ' HP / ' + pokemon.evs[1] + ' Atk / ' + pokemon.evs[2] + ' Def / ' + pokemon.evs[3] + ' SpA / ' + pokemon.evs[4] + ' SpD / ' + pokemon.evs[5] + ' Spe\nIVs: ' + pokemon.ivs[0] + ' HP / ' + pokemon.ivs[1] + ' Atk / ' + pokemon.ivs[2] + ' Def / ' + pokemon.ivs[3] + ' SpA / ' + pokemon.ivs[4] + ' SpD / ' + pokemon.ivs[5] + ' Spe\n' + pokemon.nature + " Nature\n";
 
   pokemon.moves.forEach(move => {
     copyText += '- ' + toTitleCase(move) + '\n';

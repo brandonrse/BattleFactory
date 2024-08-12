@@ -285,6 +285,21 @@
     "description":"If I'm going down, I'm bringing you down with me."
   },
   {
+    "name": "ONIX",
+    "nickname": "",
+    "level": 100,
+    "gender": "M",
+    "shiny": "no",
+    "teraType": "Grass",
+    "item": "Eviolite",
+    "ability": "Rock Head",
+    "moves": ["STONE EDGE", "EARTHQUAKE", "IRON HEAD", "SANDSTORM"],
+    "evs": [128, 0, 252, 0, 0, 128],
+    "ivs": [31, 31, 31, 31, 31, 31],
+    "nature": "Careful",
+    "description":"A rock hard Pokémon with true-grit determination."
+  },
+  {
     "name": "SHELLOS",
     "nickname": "",
     "level": 100,
@@ -298,5 +313,20 @@
     "ivs": [31, 31, 31, 31, 31, 31],
     "nature": "Bold",
     "description":"By popular demand, here's a little guy!"
+  },
+  {
+    "name": "STARMIE",
+    "nickname": "",
+    "level": 100,
+    "gender": "",
+    "shiny": "no",
+    "teraType": "Ice",
+    "item": "Petaya Berry",
+    "ability": "Natural Cure",
+    "moves": ["PSYCHIC", "HYDRO PUMP", "ICE BEAM", "THUNDERBOLT"],
+    "evs": [0, 0, 0, 252, 4, 252],
+    "ivs": [31, 31, 31, 31, 31, 31],
+    "nature": "Quiet",
+    "description":"An all-out offensive Water-type Pokémon!"
   }
 ]
