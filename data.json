@@ -270,6 +270,21 @@
     "description":"Again, again!"
   },
   {
+    "name": "GYARADOS",
+    "nickname": "",
+    "level": 100,
+    "gender": "M",
+    "shiny": "no",
+    "teraType": "Ground",
+    "item": "Heavy-Duty Boots",
+    "ability": "Intimidate",
+    "moves": ["WATERFALL", "CRUNCH", "OUTRAGE", "IRON TAIL"],
+    "evs": [4, 252, 0, 0, 0, 252],
+    "ivs": [31, 31, 31, 31, 31, 31],
+    "nature": "Brave",
+    "description":"An all-out offensive Water-type Pokémon!"
+  },
+  {
     "name": "HOUNDOOM",
     "nickname": "Baskerville",
     "level": 100,
@@ -300,6 +315,51 @@
     "description":"A rock hard Pokémon with true-grit determination."
   },
   {
+    "name": "PIKACHU-WORLD",
+    "nickname": "",
+    "level": 100,
+    "gender": "M",
+    "shiny": "no",
+    "teraType": "Electric",
+    "item": "Light Ball",
+    "ability": "Static",
+    "moves": ["THUNDERBOLT", "QUICK ATTACK", "IRON TAIL", "ELECTROWEB"],
+    "evs": [84, 84, 84, 84, 84, 88],
+    "ivs": [31, 31, 31, 31, 31, 31],
+    "nature": "Quirky",
+    "description":"The very best Pikachu like no other."
+  },
+  {
+    "name": "PIKACHU",
+    "nickname": "",
+    "level": 100,
+    "gender": "M",
+    "shiny": "no",
+    "teraType": "Grass",
+    "item": "Light Ball",
+    "ability": "Static",
+    "moves": ["VOLT TACKLE", "QUICK ATTACK", "LIGHT SCREEN", "NUZZLE"],
+    "evs": [0, 252, 0, 0, 4, 252],
+    "ivs": [31, 31, 31, 31, 31, 31],
+    "nature": "Adamant",
+    "description":"The Battle Legend's Pikachu."
+  },
+  {
+    "name": "PIKACHU",
+    "nickname": "",
+    "level": 100,
+    "gender": "M",
+    "shiny": "no",
+    "teraType": "Steel",
+    "item": "Light Ball",
+    "ability": "Static",
+    "moves": ["THUNDER", "SURF", "IRON TAIL", "VOLT TACKLE"],
+    "evs": [0, 4, 0, 252, 0, 252],
+    "ivs": [31, 31, 31, 31, 31, 31],
+    "nature": "Sassy",
+    "description":"The Fighter's trusted partner."
+  },
+  {
     "name": "SHELLOS",
     "nickname": "",
     "level": 100,
@@ -315,18 +375,18 @@
     "description":"By popular demand, here's a little guy!"
   },
   {
-    "name": "STARMIE",
-    "nickname": "",
+    "name": "WOOPER",
+    "nickname": "WOOP WOOP",
     "level": 100,
-    "gender": "",
+    "gender": "M",
     "shiny": "no",
-    "teraType": "Ice",
-    "item": "Petaya Berry",
-    "ability": "Natural Cure",
-    "moves": ["PSYCHIC", "HYDRO PUMP", "ICE BEAM", "THUNDERBOLT"],
-    "evs": [0, 0, 0, 252, 4, 252],
+    "teraType": "Dragon",
+    "item": "Quick Claw",
+    "ability": "Water Absorb",
+    "moves": ["EARTHQUAKE", "WATERFALL", "ICE PUNCH", "DOUBLE TEAM"],
+    "evs": [252, 252, 4, 0, 0, 0],
     "ivs": [31, 31, 31, 31, 31, 31],
-    "nature": "Quiet",
-    "description":"An all-out offensive Water-type Pokémon!"
+    "nature": "Naughty",
+    "description":"One Woopy Boi."
   }
 ]
